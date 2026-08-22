@@ -4,4 +4,4 @@
 # ¡Bienvenido a mi índice de proyectos! 🚀 
 #### Explora una colección seleccionada de mis trabajos, cada uno acompañado de breves resúmenes y enlaces directos tanto al repositorio como a las visualizaciones. Sumérgete en una muestra de mis habilidades y creaciones, meticulosamente organizadas para tu comodidad. ¡Feliz exploración!"
 
-🔗 [Indice de Proyectos](https://lpintos14.github.io/Data_Analitycs_Projects/)
+🔗 [Indice de Proyectos](https://lpintos14.github.io/Data_Analytics_Projects/)
