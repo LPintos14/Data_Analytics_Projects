@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Wild Bike Store &mdash; Where the margin lives &mdash; Lautaro Pintos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Bikes are 72.5% of revenue at 33.2% margin; accessories are 17.7% at 58.6%. Analysis of 113,036 order lines, 2011-2016." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Lautaro Pintos</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Projects</a></li>
+					<li class="active"><a href="bikes.html">Wild Bike Store</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://github.com/LPintos14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<span class="date">June 9, 2024</span>
+						<h1>The bike is the hook.<br />The accessory is the business.</h1>
+						<p>Six years and 113,036 order lines across six countries, read against the only<br />question that matters to a shareholder: where does the money actually get made?</p>
+					</header>
+					<div class="image main"><img src="images/Wild Bike Store.png" alt="Wild Bike Store sales dashboard" /></div>
+
+					<h2>Executive summary</h2>
+
+					<p>Over six years the business moved <strong>$85.3M of revenue at a 37.8% margin</strong>, returning $32.2M. Read by revenue, it is a bicycle retailer. Read by margin, it is an accessories retailer that uses bicycles to acquire customers.</p>
+
+					<p><strong>Bikes are 72.5% of revenue at 33.2% margin. Accessories are 17.7% of revenue at 58.6%</strong> &mdash; and they move 1,054,162 units against 36,411 bicycles, roughly twenty-nine times the volume at a twenty-fifth of the price.</p>
+
+					<p>The strategic consequence is that revenue share is the wrong number to run this business on, and it is the number the dashboard was built to show.</p>
+
+					<h2>Where the margin lives</h2>
+
+					<table>
+					<thead><tr><th>Category</th><th>Revenue</th><th>Share</th><th>Margin</th><th>Units</th></tr></thead>
+					<tbody>
+					<tr><td>Bikes</td><td>$61.8M</td><td>72.5%</td><td>33.2%</td><td>36,411</td></tr>
+					<tr><td><strong>Accessories</strong></td><td>$15.1M</td><td>17.7%</td><td><strong>58.6%</strong></td><td><strong>1,054,162</strong></td></tr>
+					<tr><td>Clothing</td><td>$8.4M</td><td>9.8%</td><td>33.9%</td><td>254,743</td></tr>
+					</tbody>
+					</table>
+
+					<p>An average bicycle line is worth $2,378; an average accessory line is worth $216. The accessory earns far less per transaction and far more per dollar. Within accessories the spread is wide and exploitable: <strong>Socks run 63.3% margin, Fenders 60.1%, Helmets 58.9%</strong>, while Caps (14.2%) and Jerseys (14.7%) behave like the bikes do.</p>
+
+					<h2>Two markets behaving very differently</h2>
+
+					<table>
+					<thead><tr><th>Country</th><th>Share of revenue</th><th>Margin</th></tr></thead>
+					<tbody>
+					<tr><td>United States</td><td>32.8%</td><td>39.6%</td></tr>
+					<tr><td><strong>Australia</strong></td><td><strong>25.0%</strong></td><td><strong>31.8%</strong></td></tr>
+					<tr><td>United Kingdom</td><td>12.5%</td><td>41.5%</td></tr>
+					<tr><td>Germany</td><td>10.5%</td><td>37.4%</td></tr>
+					<tr><td>France</td><td>9.9%</td><td>34.2%</td></tr>
+					<tr><td><strong>Canada</strong></td><td><strong>9.3%</strong></td><td><strong>46.8%</strong></td></tr>
+					</tbody>
+					</table>
+
+					<p>Australia is the second-largest market on the worst margin in the portfolio. Canada is the smallest on the best. <strong>Fifteen points separate them</strong>, which on Australia's $21.3M of revenue is roughly $3.2M of margin that Canadian economics would have produced. Whether that gap is freight, local pricing or mix is the first thing worth establishing.</p>
+
+					<h2>The segmentation that turned out not to matter</h2>
+
+					<p>The analysis was commissioned partly to identify purchasing differences between men and women. <strong>There are none worth acting on.</strong> Men account for 50.8% of revenue at 38.0% margin; women 49.2% at 37.5%. On a dataset of 113,036 lines, a 1.3-point revenue split and a half-point margin difference is not a segment &mdash; it is noise with a label on it.</p>
+
+					<p>We are reporting that plainly because the alternative is worse: building a campaign on a distinction the data does not support. Age does separate the book &mdash; Adults 35&ndash;64 are half of all revenue &mdash; and Seniors 64+, at just 0.4% of revenue, carry the highest margin of any age group at 44.9%.</p>
+
+					<h2>What we would do</h2>
+
+					<ol>
+					<li><strong>Manage attach rate, not revenue mix.</strong> Every bike sold is an opportunity to sell a helmet at 58.9%. That should be a tracked metric with a target, not a by-product.</li>
+					<li><strong>Investigate Australia before growing it.</strong> Fifteen margin points below Canada on a quarter of group revenue is the single largest recoverable number in this dataset.</li>
+					<li><strong>Reprice or drop Caps and Jerseys</strong>, which sit in a high-margin category earning bike-level margins.</li>
+					<li><strong>Stop segmenting by gender</strong> and reallocate that effort to age and country, which do discriminate.</li>
+					</ol>
+
+					<h2>Method</h2>
+
+					<p>113,036 order lines, 2011 to 2016, across six countries. Margin computed line by line from revenue and cost as recorded, then aggregated by category, sub-category, country, age band and gender. SQL for the aggregation, Python (pandas) for exploration, Tableau for presentation.</p>
+
+					<h2>What this does not tell you</h2>
+
+					<p>Cost is taken as given in the source; we did not verify how freight or overhead were allocated, and margin differences between countries could partly reflect that allocation rather than trading reality. The data has no customer identifier across orders, so attach rate is inferred from category mix rather than observed basket by basket. Revenue also fell from $20.0M in 2015 to $17.7M in 2016 &mdash; a decline this analysis describes but does not explain.</p>
+					<hr />
+					<ul class="actions">
+						<li><a href="https://public.tableau.com/views/ProyectBikesSales/Dashboard1" class="button primary">Open the dashboard</a></li>
+						<li><a href="https://github.com/LPintos14/Data_Analytics_Projects/tree/main/Project_Bikes_Sales" class="button">SQL &amp; data</a></li>
+						<li><a href="index.html" class="button">All projects</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Analyst</h3>
+						<p>Lautaro Pintos<br />Buenos Aires, Argentina</p>
+					</section>
+					<section>
+						<h3>Code</h3>
+						<p><a href="https://github.com/LPintos14">github.com/LPintos14</a></p>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Lautaro Pintos</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
