@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Helvetica,Arial,sans-serif">
 <rect width="1200" height="600" fill="#242943"/>
 <text x="90" y="34" fill="#ffffff" font-size="25" font-weight="600">Late delivery, not slow delivery, is what costs the review</text>
-<text x="90" y="57" fill="#9fa3b8" font-size="15">Olist marketplace · 27 Brazilian states · 99k orders · bubble size = order volume</text>
+<text x="90" y="57" fill="#9fa3b8" font-size="15">Olist marketplace · 27 Brazilian states · 96k orders · bubble size = order volume</text>
 <line x1="90" y1="469" x2="1160" y2="469" stroke="#3a4066" stroke-width="1"/>
 <text x="78" y="474" fill="#9fa3b8" font-size="14" text-anchor="end">3.7</text>
 <line x1="90" y1="407" x2="1160" y2="407" stroke="#3a4066" stroke-width="1"/>
@@ -56,6 +56,7 @@
 <circle cx="225.8" cy="204.9" r="6.8" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
 <circle cx="291.7" cy="131.3" r="6.7" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
 <circle cx="538.6" cy="352.1" r="6.6" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
-<text x="297" y="229" fill="#ff9f9f" font-size="14">AM: 26.4 days, 4.3% late</text>
-<text x="1066" y="433" fill="#ff9f9f" font-size="14" text-anchor="end">AL: 24.5 days — faster — but 24.1% late</text>
+<line x1="267" y1="233" x2="237" y2="275" stroke="#ff9f9f" stroke-width="1"/>
+<text x="233" y="281" fill="#ff9f9f" font-size="14" text-anchor="middle">AM · 26.4 days — the slowest — but only 4.3% late</text>
+<text x="1066" y="433" fill="#ff9f9f" font-size="14" text-anchor="end">AL · 24.5 days — faster — yet 24.1% late</text>
 </svg>
