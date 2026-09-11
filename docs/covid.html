@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>COVID-19 &mdash; What case fatality actually measures &mdash; Lautaro Pintos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Reported case fatality ranges from 4.88% in Peru to 0.07% in Singapore. A 70-fold spread that measures counting as much as outcomes." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Lautaro Pintos</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Projects</a></li>
+					<li class="active"><a href="covid.html">COVID-19</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://github.com/LPintos14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<span class="date">May 27, 2024</span>
+						<h1>A seventy-fold gap<br />in the same disease</h1>
+						<p>Reported case fatality across 245 territories &mdash; and why the spread<br />says more about measurement than about the virus.</p>
+					</header>
+					<div class="image main"><img src="images/covid projecxt.png" alt="COVID-19 exploratory analysis dashboard" /></div>
+
+					<h2>Executive summary</h2>
+
+					<p>Restricting the comparison to territories that recorded more than one million cases &mdash; large enough that small-number effects cannot explain the result &mdash; <strong>reported case fatality ranges from 4.88% in Peru to 0.07% in Singapore. A seventy-fold difference.</strong></p>
+
+					<p>No plausible biological account explains a seventy-fold gap in the same disease over the same period. What the metric is largely measuring is <strong>how many mild cases each country detected</strong>, alongside real differences in health-system capacity and age structure.</p>
+
+					<p>That is the finding. The number is not a ranking of outcomes; it is a ranking of testing regimes wearing the costume of a ranking of outcomes.</p>
+
+					<h2>The spread</h2>
+
+					<table>
+					<thead><tr><th>Highest reported fatality</th><th></th><th>Lowest</th><th></th></tr></thead>
+					<tbody>
+					<tr><td>Peru</td><td><strong>4.88%</strong></td><td>Singapore</td><td><strong>0.07%</strong></td></tr>
+					<tr><td>Mexico</td><td>4.35%</td><td>South Korea</td><td>0.10%</td></tr>
+					<tr><td>Ecuador</td><td>3.35%</td><td>China</td><td>0.12%</td></tr>
+					<tr><td>Bulgaria</td><td>2.91%</td><td></td><td></td></tr>
+					<tr><td>Tunisia</td><td>2.55%</td><td></td><td></td></tr>
+					</tbody>
+					</table>
+
+					<p>Peru recorded 4,524,748 cases and 220,831 deaths. South Korea recorded 34,571,873 cases and 35,934 deaths &mdash; nearly eight times the cases and a sixth of the deaths. A country that tests broadly finds its mild cases, inflating the denominator and depressing the ratio. A country that tests mainly the hospitalised does the opposite.</p>
+
+					<h2>Recorded infection</h2>
+
+					<p>On the share of population recorded as infected, the leaders are small, dense and well-instrumented:</p>
+
+					<table>
+					<thead><tr><th>Territory</th><th>Population infected (recorded)</th><th>Population</th></tr></thead>
+					<tbody>
+					<tr><td>Cyprus</td><td><strong>77.1%</strong></td><td>896,007</td></tr>
+					<tr><td>Brunei</td><td>76.6%</td><td>449,002</td></tr>
+					<tr><td>San Marino</td><td>75.1%</td><td>33,690</td></tr>
+					<tr><td>Austria</td><td>68.0%</td><td>8,939,617</td></tr>
+					<tr><td>South Korea</td><td>66.7%</td><td>51,815,808</td></tr>
+					</tbody>
+					</table>
+
+					<p>These figures should be read as detection rates, not infection rates. The countries at the top of this table are not the countries that were hit hardest &mdash; they are the countries that looked hardest.</p>
+
+					<h2>What we would do</h2>
+
+					<ol>
+					<li><strong>Do not rank countries on reported case fatality.</strong> It is not comparable across territories and any league table built from it will be wrong.</li>
+					<li><strong>Use excess mortality</strong> where the objective is to compare outcomes. It is insensitive to testing policy, which is the whole problem here.</li>
+					<li><strong>Publish the denominator alongside the ratio.</strong> Peru at 4.88% and South Korea at 0.10% are not describing the same quantity, and the case counts make that visible immediately.</li>
+					</ol>
+
+					<h2>Method</h2>
+
+					<p>Exploratory analysis in SQL across 245 territories, segmenting by population, maximum recorded cases, total deaths and derived infection share. The one-million-case floor was applied deliberately to remove small-denominator volatility from the fatality comparison. Visualisation in Tableau.</p>
+
+					<h2>What this does not tell you</h2>
+
+					<p>Every figure here is <em>reported</em> data, and reporting standards varied by country, by period and by political circumstance &mdash; several of the largest apparent differences are differences in definition. Cases are cumulative maxima drawn from the source series, so revisions and backfills are not reconciled. Age structure, which drives fatality strongly, is not controlled for. This analysis is a lesson in reading a metric carefully; it is not an epidemiological conclusion.</p>
+					<hr />
+					<ul class="actions">
+						<li><a href="https://public.tableau.com/views/Covid-19Project_17168498376980/Dashboard1" class="button primary">Open the dashboard</a></li>
+						<li><a href="https://github.com/LPintos14/Data_Analytics_Projects/tree/main/Project_Covid" class="button">SQL &amp; data</a></li>
+						<li><a href="index.html" class="button">All projects</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Analyst</h3>
+						<p>Lautaro Pintos<br />Buenos Aires, Argentina</p>
+					</section>
+					<section>
+						<h3>Code</h3>
+						<p><a href="https://github.com/LPintos14">github.com/LPintos14</a></p>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Lautaro Pintos</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
