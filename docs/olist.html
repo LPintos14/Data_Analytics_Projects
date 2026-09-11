@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Olist &mdash; What a late delivery costs &mdash; Lautaro Pintos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="8% of orders arrive late and produce 55% of all 1-2 star reviews. Analysis of 99k Brazilian e-commerce orders across 9 tables and 1.5M rows." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Lautaro Pintos</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Projects</a></li>
+					<li class="active"><a href="olist.html">Olist</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://github.com/LPintos14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<span class="date">August 21, 2026</span>
+						<h1>Customers don't punish<br />a slow delivery.<br />They punish a broken date.</h1>
+						<p>Ninety-nine thousand orders across a Brazilian marketplace, nine related tables,<br />1.5 million rows &mdash; and one finding that changes what you should fix first.</p>
+					</header>
+					<div class="image main"><img src="images/olist.svg" alt="Late delivery versus review score across 27 Brazilian states" /></div>
+
+					<h2>Executive summary</h2>
+
+					<p><strong>Eight per cent of orders arrive after the promised date. Those orders produce 55% of every one- and two-star review on the platform.</strong> A late order is 5.7 times more likely to generate a destructive review than an on-time one, and the average delivery time behind a five-star review is 10.7 days against 21.3 days behind a one-star.</p>
+
+					<p>The obvious reading is <em>deliver faster</em>. The data does not support it. The state-level comparison shows something more useful and considerably cheaper to act on.</p>
+
+					<h2>The finding that changes the priority</h2>
+
+					<table>
+					<thead><tr><th>State</th><th>Delivery time</th><th>Orders past promised date</th><th>Average review</th></tr></thead>
+					<tbody>
+					<tr><td><strong>AM</strong> (Amazonas)</td><td><strong>26.4 days</strong> &mdash; slowest in Brazil</td><td>4.3%</td><td><strong>4.10</strong></td></tr>
+					<tr><td><strong>AL</strong> (Alagoas)</td><td>24.5 days &mdash; faster</td><td><strong>24.1%</strong></td><td>3.80</td></tr>
+					</tbody>
+					</table>
+
+					<p>Amazonas takes almost two days longer than Alagoas to deliver and scores three tenths of a point higher. The variable that separates them is not duration &mdash; it is whether the platform hit the date it committed to. <strong>Amazonas keeps its promise 96% of the time; Alagoas misses it in nearly a quarter of orders.</strong></p>
+
+					<p>Customers in the Amazon basin are not upset about twenty-six days, because they were told twenty-six days. Customers in Alagoas are upset about twenty-four, because they were told fewer.</p>
+
+					<p>Across all 27 states the pattern holds: lateness tracks review score, and raw delivery duration does not.</p>
+
+					<table>
+					<thead><tr><th colspan="2">Worst on lateness</th><th colspan="2">Best on lateness</th></tr></thead>
+					<tbody>
+					<tr><td>AL</td><td>24.1%</td><td>AC</td><td>3.3%</td></tr>
+					<tr><td>MA</td><td>20.4%</td><td>RO</td><td>4.0%</td></tr>
+					<tr><td>SE</td><td>16.3%</td><td>AM</td><td>4.3%</td></tr>
+					</tbody>
+					</table>
+
+					<h2>Where it concentrates</h2>
+
+					<p>Freight is the other pressure point. In the north and north-east, shipping runs 22&ndash;26% of order value against 13.9% in S&atilde;o Paulo, which alone accounts for 40,495 orders and $5.07M of the platform's revenue at 8.7 days and 5.8% late.</p>
+
+					<p>By category, <strong>office furniture is the worst rated on the platform at 3.48</strong>, carrying 25% freight on a $162 average ticket. Heavy goods, expensive shipping and slow delivery compound into the weakest customer experience in the catalogue.</p>
+
+					<h2>What we would do</h2>
+
+					<ol>
+					<li><strong>Re-baseline promised dates in the north-east before touching logistics.</strong> Quoting realistic windows in AL, MA, SE and PI converts the same physical delivery into a kept promise. It costs nothing and, on the evidence of Amazonas, it works.</li>
+					<li><strong>Report lateness, not average delivery time.</strong> The metric currently on the dashboard is the one that does not predict satisfaction.</li>
+					<li><strong>Treat office furniture as a distinct logistics problem</strong> rather than a catalogue category.</li>
+					<li><strong>Model the revenue at stake</strong> from review scores before investing in faster freight &mdash; the cheaper intervention may capture most of the benefit.</li>
+					</ol>
+
+					<h2>Method</h2>
+
+					<p>Nine related tables, roughly 1.5 million rows, loaded into an indexed SQLite database by a reproducible Python pipeline &mdash; the analysis can be rebuilt from the raw CSVs with two commands. The build includes a documented data-quality audit: UTF-8 BOM handling, duplicate resolution and explicit treatment of missing values, each recorded rather than silently dropped. Aggregates exported for Tableau; the chart above is generated directly from the state-level export.</p>
+
+					<h2>What this does not tell you</h2>
+
+					<p>This is an observational dataset, so lateness and poor reviews are shown to move together, not proven to cause one another &mdash; an order that arrives late may also have been damaged, mispicked or poorly packed. Review scores are self-selected: unhappy customers rate more often than satisfied ones. Freight percentages are computed on order value, not on weight or dimensions, which the dataset does not carry. And the promised date is the platform's own estimate, so re-baselining shifts both the metric and the customer expectation &mdash; the effect should be measured, not assumed.</p>
+					<hr />
+					<ul class="actions">
+						<li><a href="https://github.com/LPintos14/olist-ecommerce-analysis" class="button primary">Pipeline &amp; SQL</a></li>
+						<li><a href="index.html" class="button">All projects</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Analyst</h3>
+						<p>Lautaro Pintos<br />Buenos Aires, Argentina</p>
+					</section>
+					<section>
+						<h3>Code</h3>
+						<p><a href="https://github.com/LPintos14">github.com/LPintos14</a></p>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Lautaro Pintos</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
