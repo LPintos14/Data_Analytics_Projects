@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Superstore &mdash; Discount policy review &mdash; Lautaro Pintos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Orders discounted above 20% bill $363K and lose $135K. Analysis of 9,994 US retail order lines, 2014-2017." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Lautaro Pintos</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Projects</a></li>
+					<li class="active"><a href="superstore.html">Superstore</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://github.com/LPintos14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<span class="date">May 24, 2024</span>
+						<h1>Where the margin<br />actually goes</h1>
+						<p>Four years of US retail orders, read against one question: what does the discount<br />policy cost, and is anybody counting it?</p>
+					</header>
+					<div class="image main"><img src="images/Super store.png" alt="Superstore executive sales dashboard" /></div>
+
+					<h2>Executive summary</h2>
+
+					<p>The business turned <strong>$2.30M of sales into $286K of profit</strong> across four years &mdash; a 12.5% net margin. That headline is comfortable and it is hiding something.</p>
+
+					<p><strong>1,393 order lines &mdash; 14% of everything sold &mdash; carry a discount above 20%. Together they billed $363K and lost $135K.</strong> Removing that one group, and changing nothing else, would lift total profit from $286K to $422K: an increase of 47%.</p>
+
+					<p>This is not a pricing question at the edges. Almost one order in seven is sold below the point where the business makes money, and the discount ladder shows the line is not blurry.</p>
+
+					<h2>The threshold is exact</h2>
+
+					<p>Grouping every line by the discount applied produces a result that is unusually clean for retail data:</p>
+
+					<table>
+					<thead><tr><th>Discount</th><th>Lines</th><th>Revenue</th><th>Net margin</th></tr></thead>
+					<tbody>
+					<tr><td>0%</td><td>4,798</td><td>$1,087,908</td><td>+29.5%</td></tr>
+					<tr><td>10%</td><td>94</td><td>$54,369</td><td>+16.6%</td></tr>
+					<tr><td>15%</td><td>52</td><td>$27,559</td><td>+5.1%</td></tr>
+					<tr><td>20%</td><td>3,657</td><td>$764,594</td><td>+11.8%</td></tr>
+					<tr><td>30%</td><td>227</td><td>$103,227</td><td>&minus;10.0%</td></tr>
+					<tr><td>40%</td><td>206</td><td>$116,418</td><td>&minus;19.8%</td></tr>
+					<tr><td>50%</td><td>66</td><td>$58,919</td><td>&minus;34.8%</td></tr>
+					<tr><td>70%</td><td>418</td><td>$40,620</td><td>&minus;98.7%</td></tr>
+					<tr><td>80%</td><td>300</td><td>$16,964</td><td>&minus;180.0%</td></tr>
+					</tbody>
+					</table>
+
+					<p>Every tier at or below 20% is profitable. Not one tier above it is. At 80% off, the business loses <strong>$1.80 for every dollar it takes in</strong> &mdash; those 300 lines generated $17K of revenue and $30.5K of loss.</p>
+
+					<p>The damage is concentrated in Furniture. Of the 1,393 heavily discounted lines, 542 are Furniture, and they account for $54K of the $135K lost. Three sub-categories are structurally unprofitable across the whole period regardless of discount: <strong>Tables (&minus;8.6%), Bookcases (&minus;3.0%) and Supplies (&minus;2.5%)</strong>.</p>
+
+					<h2>A second problem, in one region</h2>
+
+					<p>Returns are not distributed the way the sales are.</p>
+
+					<table>
+					<thead><tr><th>Region</th><th>Lines returned</th><th>Rate</th></tr></thead>
+					<tbody>
+					<tr><td>West</td><td>490 of 3,203</td><td><strong>15.3%</strong></td></tr>
+					<tr><td>East</td><td>149 of 2,848</td><td>5.2%</td></tr>
+					<tr><td>South</td><td>69 of 1,620</td><td>4.3%</td></tr>
+					<tr><td>Central</td><td>92 of 2,323</td><td>4.0%</td></tr>
+					</tbody>
+					</table>
+
+					<p>The West returns at roughly <strong>three times the rate of every other region</strong>. Across the business, returned orders represent $180,504 &mdash; 7.9% of all sales. A gap this wide is rarely customer behaviour; it usually points at a fulfilment centre, a carrier, or a listing that describes the product differently.</p>
+
+					<h2>What we would do</h2>
+
+					<ol>
+					<li><strong>Cap discretionary discount at 20%</strong> and require approval above it. The data does not suggest a gradual decline in profitability &mdash; it shows a floor. This single control recovers most of the $135K.</li>
+					<li><strong>Review Furniture pricing separately.</strong> Tables and Bookcases lose money at list price. That is a cost or a freight problem, not a discount problem, and discounting is currently masking it.</li>
+					<li><strong>Audit the West region's returns</strong> before treating it as a sales problem. Three times the return rate is an operational signal.</li>
+					<li><strong>Watch the Consumer segment.</strong> It is the largest book of business ($1.16M) at the worst margin (11.5%), against Home Office at 14.0% on a third of the volume.</li>
+					</ol>
+
+					<h2>Method</h2>
+
+					<p>9,994 order lines covering 5,009 distinct orders from 793 customers, 3 January 2014 to 30 December 2017. Joined against a returns table of 296 order IDs. Aggregation in SQL, cross-checked in Python; visualisation in Tableau.</p>
+
+					<h2>What this does not tell you</h2>
+
+					<p>Profit here is as recorded in the source data &mdash; we did not rebuild it from cost inputs, so any allocation error upstream carries through. The returns table records that an order was returned, not why, so the West finding identifies where to look rather than what is wrong. And the dataset covers four closed years: it explains what the discount policy did, not what the market would bear if it changed.</p>
+					<hr />
+					<ul class="actions">
+						<li><a href="https://public.tableau.com/views/Resumenejecutivo_17133070144490/Resumenejecutivo" class="button primary">Open the dashboard</a></li>
+						<li><a href="https://github.com/LPintos14/Data_Analytics_Projects/tree/main/Project_SuperStore" class="button">SQL &amp; data</a></li>
+						<li><a href="index.html" class="button">All projects</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Analyst</h3>
+						<p>Lautaro Pintos<br />Buenos Aires, Argentina</p>
+					</section>
+					<section>
+						<h3>Code</h3>
+						<p><a href="https://github.com/LPintos14">github.com/LPintos14</a></p>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Lautaro Pintos</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
