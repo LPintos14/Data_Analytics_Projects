@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Helvetica,Arial,sans-serif">
+<rect width="1200" height="600" fill="#242943"/>
+<text x="90" y="34" fill="#ffffff" font-size="25" font-weight="600">Late delivery, not slow delivery, is what costs the review</text>
+<text x="90" y="57" fill="#9fa3b8" font-size="15">Olist marketplace · 27 Brazilian states · 99k orders · bubble size = order volume</text>
+<line x1="90" y1="469" x2="1160" y2="469" stroke="#3a4066" stroke-width="1"/>
+<text x="78" y="474" fill="#9fa3b8" font-size="14" text-anchor="end">3.7</text>
+<line x1="90" y1="407" x2="1160" y2="407" stroke="#3a4066" stroke-width="1"/>
+<text x="78" y="412" fill="#9fa3b8" font-size="14" text-anchor="end">3.8</text>
+<line x1="90" y1="346" x2="1160" y2="346" stroke="#3a4066" stroke-width="1"/>
+<text x="78" y="351" fill="#9fa3b8" font-size="14" text-anchor="end">3.9</text>
+<line x1="90" y1="285" x2="1160" y2="285" stroke="#3a4066" stroke-width="1"/>
+<text x="78" y="290" fill="#9fa3b8" font-size="14" text-anchor="end">4.0</text>
+<line x1="90" y1="223" x2="1160" y2="223" stroke="#3a4066" stroke-width="1"/>
+<text x="78" y="228" fill="#9fa3b8" font-size="14" text-anchor="end">4.1</text>
+<line x1="90" y1="162" x2="1160" y2="162" stroke="#3a4066" stroke-width="1"/>
+<text x="78" y="167" fill="#9fa3b8" font-size="14" text-anchor="end">4.2</text>
+<line x1="90" y1="101" x2="1160" y2="101" stroke="#3a4066" stroke-width="1"/>
+<text x="78" y="106" fill="#9fa3b8" font-size="14" text-anchor="end">4.3</text>
+<text x="90" y="556" fill="#9fa3b8" font-size="14" text-anchor="middle">0%</text>
+<text x="296" y="556" fill="#9fa3b8" font-size="14" text-anchor="middle">5%</text>
+<text x="502" y="556" fill="#9fa3b8" font-size="14" text-anchor="middle">10%</text>
+<text x="707" y="556" fill="#9fa3b8" font-size="14" text-anchor="middle">15%</text>
+<text x="913" y="556" fill="#9fa3b8" font-size="14" text-anchor="middle">20%</text>
+<text x="1119" y="556" fill="#9fa3b8" font-size="14" text-anchor="middle">25%</text>
+<text x="625" y="584" fill="#c9cce0" font-size="16" text-anchor="middle">Orders delivered after the promised date</text>
+<text x="26" y="300" fill="#c9cce0" font-size="16" text-anchor="middle" transform="rotate(-90 26 300)">Average review score</text>
+<circle cx="328.7" cy="180.4" r="24.0" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<text x="328.7" y="149.4" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">SP</text>
+<circle cx="625.0" cy="376.7" r="15.9" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<text x="625.0" y="353.7" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">RJ</text>
+<circle cx="316.3" cy="217.2" r="15.5" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<text x="316.3" y="194.7" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">MG</text>
+<circle cx="374.0" cy="229.5" r="12.5" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="287.5" cy="198.8" r="12.3" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="485.1" cy="266.3" r="11.3" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="653.8" cy="382.8" r="11.1" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="394.5" cy="254.0" r="10.1" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="415.1" cy="284.7" r="10.0" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="592.1" cy="296.9" r="10.0" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="509.8" cy="284.7" r="9.6" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="719.7" cy="364.4" r="9.2" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="600.3" cy="407.3" r="8.8" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="369.8" cy="290.8" r="8.7" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="929.5" cy="444.1" r="8.4" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="538.6" cy="247.9" r="8.4" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="555.0" cy="266.3" r="8.0" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="727.9" cy="315.3" r="8.0" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="518.0" cy="223.3" r="7.9" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="1081.8" cy="407.3" r="7.8" fill="#ff6b6b" fill-opacity="0.95" stroke="#242943" stroke-width="1.5"/>
+<text x="1081.8" y="392.6" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">AL</text>
+<circle cx="760.8" cy="358.3" r="7.6" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="596.2" cy="186.5" r="7.5" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="254.6" cy="235.6" r="7.4" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="267.0" cy="223.3" r="7.1" fill="#ff6b6b" fill-opacity="0.95" stroke="#242943" stroke-width="1.5"/>
+<text x="267.0" y="209.3" fill="#ffffff" font-size="14" font-weight="600" text-anchor="middle">AM</text>
+<circle cx="225.8" cy="204.9" r="6.8" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="291.7" cy="131.3" r="6.7" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<circle cx="538.6" cy="352.1" r="6.6" fill="#6fb3ff" fill-opacity="0.5" stroke="#242943" stroke-width="1.5"/>
+<text x="297" y="229" fill="#ff9f9f" font-size="14">AM: 26.4 days, 4.3% late</text>
+<text x="1066" y="433" fill="#ff9f9f" font-size="14" text-anchor="end">AL: 24.5 days — faster — but 24.1% late</text>
+</svg>
