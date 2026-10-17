@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es-AR">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rotación de personal</title>
+<title>Employee attrition</title>
 <!-- Tokens inlineados por build.py. No editar acá: la fuente es design/tokens.css -->
 <style>/* ============================================================
    DESIGN TOKENS — CERRADO
@@ -360,8 +360,8 @@ body {
 <body>
 <main class="reporte">
   <header class="cab">
-    <h1>Rotación de personal</h1>
-    <p class="bajada">El 11% de la plantilla explica un tercio de las bajas</p>
+    <h1>Employee attrition</h1>
+    <p class="bajada">11% of the headcount explains a third of all departures</p>
   </header>
 
   <!-- Secciones del reporte de rotación T-001 / T-002 -->
@@ -412,12 +412,12 @@ body {
 </section>
 
 
-  <footer class="pie"><p>Fuente: IBM HR Analytics — dataset sintético publicado por IBM. La metodología es real; los números no describen a ninguna empresa existente.</p></footer>
+  <footer class="pie"><p>Source: IBM HR Analytics — synthetic dataset published by IBM. The method is real and transferable; the figures describe no existing company.</p></footer>
 </main>
 
 <!-- Datos embebidos. NUNCA fetch: con file:// lo bloquea CORS y la pagina
      queda en blanco, que es exactamente el fallo que rompe el entregable. -->
-<script type="application/json" id="datos">{"libreria": "echarts", "cliente": "Muestra — IBM HR Analytics", "idioma": "es-AR", "titulo": "Rotación de personal", "bajada": "El 11% de la plantilla explica un tercio de las bajas", "pie": "Fuente: IBM HR Analytics — dataset sintético publicado por IBM. La metodología es real; los números no describen a ninguna empresa existente.", "dataset": {"filas": 1470, "fuente": "IBM HR Analytics (sintético, publicado por IBM)"}, "kpis": [{"id": "empleados", "etiqueta": "Empleados", "valor": "1.470"}, {"id": "rotacion", "etiqueta": "Rotación global", "valor": "16,1%"}, {"id": "con_he", "etiqueta": "Con horas extra", "valor": "30,5%"}, {"id": "hotspot", "etiqueta": "Nivel 1 + horas extra", "valor": "52,6%"}], "graficos": [{"id": "g1", "titulo": "Las horas extra sobreviven al control por jerarquía", "forma": "barras_agrupadas", "x": "nivel", "y": "tasa", "series": "horas_extra", "datos": [{"nivel": "Nivel 1", "horas_extra": "No", "tasa": 15.8, "n": 387}, {"nivel": "Nivel 1", "horas_extra": "Sí", "tasa": 52.6, "n": 156}, {"nivel": "Nivel 2", "horas_extra": "No", "tasa": 6.7, "n": 388}, {"nivel": "Nivel 2", "horas_extra": "Sí", "tasa": 17.8, "n": 146}, {"nivel": "Nivel 3", "horas_extra": "No", "tasa": 12.3, "n": 155}, {"nivel": "Nivel 3", "horas_extra": "Sí", "tasa": 20.6, "n": 63}, {"nivel": "Nivel 4", "horas_extra": "No", "tasa": 2.7, "n": 73}, {"nivel": "Nivel 4", "horas_extra": "Sí", "tasa": 9.1, "n": 33}, {"nivel": "Nivel 5", "horas_extra": "No", "tasa": 3.9, "n": 51}, {"nivel": "Nivel 5", "horas_extra": "Sí", "tasa": 16.7, "n": 18}], "etiquetas": {"eje_x": "", "eje_y": "Tasa de rotación", "serie": "Horas extra", "valor": "Tasa de rotación", "n": "Dotación", "unidad_n": "personas"}}, {"id": "g2", "titulo": "…y también al control por antigüedad", "forma": "barras_agrupadas", "x": "tramo", "y": "tasa", "series": "horas_extra", "datos": [{"tramo": "0-1 años", "horas_extra": "No", "tasa": 25.3, "n": 146}, {"tramo": "0-1 años", "horas_extra": "Sí", "tasa": 55.1, "n": 69}, {"tramo": "11+ años", "horas_extra": "No", "tasa": 7.2, "n": 181}, {"tramo": "11+ años", "horas_extra": "Sí", "tasa": 10.8, "n": 65}, {"tramo": "2-3 años", "horas_extra": "No", "tasa": 10.0, "n": 180}, {"tramo": "2-3 años", "horas_extra": "Sí", "tasa": 38.7, "n": 75}, {"tramo": "4-6 años", "horas_extra": "No", "tasa": 8.1, "n": 271}, {"tramo": "4-6 años", "horas_extra": "Sí", "tasa": 24.3, "n": 111}, {"tramo": "7-10 años", "horas_extra": "No", "tasa": 7.2, "n": 276}, {"tramo": "7-10 años", "horas_extra": "Sí", "tasa": 27.1, "n": 96}], "etiquetas": {"eje_x": "Antigüedad en la empresa", "eje_y": "Tasa de rotación", "serie": "Horas extra", "valor": "Tasa de rotación", "n": "Dotación", "unidad_n": "personas"}}, {"id": "g3", "titulo": "Un décimo de la gente, un tercio de las bajas", "forma": "barras_apiladas_100", "x": "panel", "series": "segmento", "datos": [{"panel": "Plantilla", "segmento": "Nivel 1 + horas extra", "pct": 10.6, "n": 156}, {"panel": "Plantilla", "segmento": "Resto", "pct": 89.4, "n": 1314}, {"panel": "Bajas", "segmento": "Nivel 1 + horas extra", "pct": 34.6, "n": 82}, {"panel": "Bajas", "segmento": "Resto", "pct": 65.4, "n": 155}], "etiquetas": {"eje_x": "", "eje_y": "% del total", "serie": "Segmento", "valor": "Participación", "n": "Personas", "unidad_n": "personas"}}, {"id": "g4", "titulo": "El sueldo retiene, pero solo dentro del nivel 1", "forma": "barras", "x": "quintil", "y": "tasa", "datos": [{"quintil": 1, "tasa": 34.9, "n": 109, "rango": "$1.009–2.220", "etiqueta": "1 (más bajo)"}, {"quintil": 2, "tasa": 34.9, "n": 109, "rango": "$2.226–2.506", "etiqueta": "2"}, {"quintil": 3, "tasa": 23.9, "n": 109, "rango": "$2.514–2.811", "etiqueta": "3"}, {"quintil": 4, "tasa": 19.4, "n": 108, "rango": "$2.814–3.423", "etiqueta": "4"}, {"quintil": 5, "tasa": 18.5, "n": 108, "rango": "$3.424–4.968", "etiqueta": "5 (más alto)"}], "etiquetas": {"eje_x": "Quintil de sueldo (1 = más bajo)", "eje_y": "Tasa de rotación", "serie": "Rotación", "subtitulo": "dentro del nivel 1", "valor": "Tasa de rotación", "n": "Dotación", "unidad_n": "personas"}}, {"id": "g5", "titulo": "Rotación por puesto", "forma": "barras_h", "x": "tasa", "y": "puesto", "datos": [{"puesto": "Representante de ventas", "tasa": 39.8, "n": 83}, {"puesto": "Técnico de laboratorio", "tasa": 23.9, "n": 259}, {"puesto": "Recursos humanos", "tasa": 23.1, "n": 52}, {"puesto": "Ejecutivo de ventas", "tasa": 17.5, "n": 326}, {"puesto": "Científico de investigación", "tasa": 16.1, "n": 292}, {"puesto": "Director de manufactura", "tasa": 6.9, "n": 145}, {"puesto": "Representante de salud", "tasa": 6.9, "n": 131}, {"puesto": "Gerente", "tasa": 4.9, "n": 102}, {"puesto": "Director de investigación", "tasa": 2.5, "n": 80}], "etiquetas": {"eje_x": "Tasa de rotación", "eje_y": "", "serie": "Rotación", "valor": "Tasa de rotación", "n": "Dotación", "unidad_n": "personas"}}], "orden_series": {"No": "--series-3", "Sí": "--series-2", "Nivel 1 + horas extra": "--series-2", "Resto": "--series-1"}, "locale": "es-AR"}</script>
+<script type="application/json" id="datos">{"libreria": "echarts", "cliente": "Portfolio sample — IBM HR Analytics", "idioma": "en-US", "titulo": "Employee attrition", "bajada": "11% of the headcount explains a third of all departures", "pie": "Source: IBM HR Analytics — synthetic dataset published by IBM. The method is real and transferable; the figures describe no existing company.", "dataset": {"filas": 1470, "fuente": "IBM HR Analytics (synthetic, published by IBM)"}, "kpis": [{"id": "empleados", "etiqueta": "Employees", "valor": "1,470"}, {"id": "rotacion", "etiqueta": "Overall attrition", "valor": "16.1%"}, {"id": "con_he", "etiqueta": "Working overtime", "valor": "30.5%"}, {"id": "hotspot", "etiqueta": "Level 1 + overtime", "valor": "52.6%"}], "graficos": [{"id": "g1", "titulo": "Overtime survives controlling for seniority", "forma": "barras_agrupadas", "x": "nivel", "y": "tasa", "series": "horas_extra", "datos": [{"nivel": "Level 1", "horas_extra": "No", "tasa": 15.8, "n": 387}, {"nivel": "Level 1", "horas_extra": "Yes", "tasa": 52.6, "n": 156}, {"nivel": "Level 2", "horas_extra": "No", "tasa": 6.7, "n": 388}, {"nivel": "Level 2", "horas_extra": "Yes", "tasa": 17.8, "n": 146}, {"nivel": "Level 3", "horas_extra": "No", "tasa": 12.3, "n": 155}, {"nivel": "Level 3", "horas_extra": "Yes", "tasa": 20.6, "n": 63}, {"nivel": "Level 4", "horas_extra": "No", "tasa": 2.7, "n": 73}, {"nivel": "Level 4", "horas_extra": "Yes", "tasa": 9.1, "n": 33}, {"nivel": "Level 5", "horas_extra": "No", "tasa": 3.9, "n": 51}, {"nivel": "Level 5", "horas_extra": "Yes", "tasa": 16.7, "n": 18}], "etiquetas": {"eje_x": "", "eje_y": "Attrition rate", "serie": "Overtime", "valor": "Attrition rate", "n": "Headcount", "unidad_n": "people"}}, {"id": "g2", "titulo": "…and controlling for tenure too", "forma": "barras_agrupadas", "x": "tramo", "y": "tasa", "series": "horas_extra", "datos": [{"tramo": "0-1 yrs", "horas_extra": "No", "tasa": 25.3, "n": 146}, {"tramo": "0-1 yrs", "horas_extra": "Yes", "tasa": 55.1, "n": 69}, {"tramo": "11+ yrs", "horas_extra": "No", "tasa": 7.2, "n": 181}, {"tramo": "11+ yrs", "horas_extra": "Yes", "tasa": 10.8, "n": 65}, {"tramo": "2-3 yrs", "horas_extra": "No", "tasa": 10.0, "n": 180}, {"tramo": "2-3 yrs", "horas_extra": "Yes", "tasa": 38.7, "n": 75}, {"tramo": "4-6 yrs", "horas_extra": "No", "tasa": 8.1, "n": 271}, {"tramo": "4-6 yrs", "horas_extra": "Yes", "tasa": 24.3, "n": 111}, {"tramo": "7-10 yrs", "horas_extra": "No", "tasa": 7.2, "n": 276}, {"tramo": "7-10 yrs", "horas_extra": "Yes", "tasa": 27.1, "n": 96}], "etiquetas": {"eje_x": "Tenure at the company", "eje_y": "Attrition rate", "serie": "Overtime", "valor": "Attrition rate", "n": "Headcount", "unidad_n": "people"}}, {"id": "g3", "titulo": "A tenth of the people, a third of the departures", "forma": "barras_apiladas_100", "x": "panel", "series": "segmento", "datos": [{"panel": "Headcount", "segmento": "Level 1 + overtime", "pct": 10.6, "n": 156}, {"panel": "Headcount", "segmento": "Everyone else", "pct": 89.4, "n": 1314}, {"panel": "Departures", "segmento": "Level 1 + overtime", "pct": 34.6, "n": 82}, {"panel": "Departures", "segmento": "Everyone else", "pct": 65.4, "n": 155}], "etiquetas": {"eje_x": "", "eje_y": "% of total", "serie": "Segment", "valor": "Share", "n": "People", "unidad_n": "people"}}, {"id": "g4", "titulo": "Pay retains, but only inside level 1", "forma": "barras", "x": "quintil", "y": "tasa", "datos": [{"quintil": 1, "tasa": 34.9, "n": 109, "rango": "$1.009–2.220", "etiqueta": "1 (lowest)"}, {"quintil": 2, "tasa": 34.9, "n": 109, "rango": "$2.226–2.506", "etiqueta": "2"}, {"quintil": 3, "tasa": 23.9, "n": 109, "rango": "$2.514–2.811", "etiqueta": "3"}, {"quintil": 4, "tasa": 19.4, "n": 108, "rango": "$2.814–3.423", "etiqueta": "4"}, {"quintil": 5, "tasa": 18.5, "n": 108, "rango": "$3.424–4.968", "etiqueta": "5 (highest)"}], "etiquetas": {"eje_x": "Salary quintile (1 = lowest)", "eje_y": "Attrition rate", "serie": "Attrition", "subtitulo": "within level 1", "valor": "Attrition rate", "n": "Headcount", "unidad_n": "people"}}, {"id": "g5", "titulo": "Sales reps leave at three times the company average", "forma": "barras_h", "x": "tasa", "y": "puesto", "datos": [{"puesto": "Sales Representative", "tasa": 39.8, "n": 83}, {"puesto": "Laboratory Technician", "tasa": 23.9, "n": 259}, {"puesto": "Human Resources", "tasa": 23.1, "n": 52}, {"puesto": "Sales Executive", "tasa": 17.5, "n": 326}, {"puesto": "Research Scientist", "tasa": 16.1, "n": 292}, {"puesto": "Manufacturing Director", "tasa": 6.9, "n": 145}, {"puesto": "Healthcare Representative", "tasa": 6.9, "n": 131}, {"puesto": "Manager", "tasa": 4.9, "n": 102}, {"puesto": "Research Director", "tasa": 2.5, "n": 80}], "etiquetas": {"eje_x": "Attrition rate", "eje_y": "", "serie": "Attrition", "valor": "Attrition rate", "n": "Headcount", "unidad_n": "people"}}], "orden_series": {"No": "--series-3", "Yes": "--series-2", "Level 1 + overtime": "--series-2", "Everyone else": "--series-1"}, "locale": "en-US"}</script>
 <!-- Libreria vendorizada e inlineada. Nunca CDN. -->
 <script>
 /*
@@ -634,7 +634,7 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           }
         }),
         grid: {
-          top: 42,
+          top: 48,
           bottom: 24,
           left: 12,
           right: 12,
@@ -651,7 +651,17 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
         yAxis: {
           type: 'value',
           max: 60,
+          interval: 10,
           name: et.eje_y || '',
+          nameLocation: 'end',
+          nameGap: 16,
+          nameTextStyle: {
+            align: 'left',
+            padding: [0, 0, 0, -28],
+            color: t.inkMuted,
+            fontFamily: t.font,
+            fontSize: 11
+          },
           axisLine: { show: false },
           axisTick: { show: false },
           axisLabel: {
@@ -727,8 +737,8 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           }
         }),
         grid: {
-          top: 42,
-          bottom: 24,
+          top: 48,
+          bottom: 48,
           left: 12,
           right: 12,
           containLabel: true
@@ -737,14 +747,31 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           type: 'category',
           data: tramos,
           name: et.eje_x || '',
+          nameLocation: 'middle',
+          nameGap: 30,
+          nameTextStyle: {
+            color: t.inkMuted,
+            fontFamily: t.font,
+            fontSize: 11
+          },
           axisLine: { lineStyle: { color: t.baseline } },
           axisTick: { show: false },
           axisLabel: { color: t.inkPrimary, fontFamily: t.font, fontSize: 12, margin: 10 }
         },
         yAxis: {
           type: 'value',
-          max: 65,
+          max: 60,
+          interval: 10,
           name: et.eje_y || '',
+          nameLocation: 'end',
+          nameGap: 16,
+          nameTextStyle: {
+            align: 'left',
+            padding: [0, 0, 0, -28],
+            color: t.inkMuted,
+            fontFamily: t.font,
+            fontSize: 11
+          },
           axisLine: { show: false },
           axisTick: { show: false },
           axisLabel: {
@@ -817,8 +844,8 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           }
         }),
         grid: {
-          top: 40,
-          bottom: 24,
+          top: 36,
+          bottom: 44,
           left: 12,
           right: 18,
           containLabel: true
@@ -827,7 +854,7 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           type: 'category',
           inverse: true,
           data: paneles,
-          name: et.eje_y || '',
+          name: '',
           axisLine: { lineStyle: { color: t.baseline } },
           axisTick: { show: false },
           axisLabel: { color: t.inkPrimary, fontFamily: t.font, fontSize: 13, fontWeight: 600, margin: 12 }
@@ -836,7 +863,15 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           type: 'value',
           min: 0,
           max: 100,
-          name: et.eje_x || '',
+          interval: 20,
+          name: et.eje_x || et.eje_y || '',
+          nameLocation: 'middle',
+          nameGap: 28,
+          nameTextStyle: {
+            color: t.inkMuted,
+            fontFamily: t.font,
+            fontSize: 11
+          },
           axisLine: { show: false },
           axisTick: { show: false },
           axisLabel: {
@@ -886,8 +921,8 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           }
         }),
         grid: {
-          top: 24,
-          bottom: 34,
+          top: 48,
+          bottom: 44,
           left: 12,
           right: 12,
           containLabel: true
@@ -897,7 +932,7 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
           data: qCategorias,
           name: et.eje_x || '',
           nameLocation: 'middle',
-          nameGap: 24,
+          nameGap: 28,
           nameTextStyle: {
             color: t.inkMuted,
             fontFamily: t.font,
@@ -909,8 +944,18 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
         },
         yAxis: {
           type: 'value',
-          max: 42,
+          max: 40,
+          interval: 10,
           name: et.eje_y || '',
+          nameLocation: 'end',
+          nameGap: 16,
+          nameTextStyle: {
+            align: 'left',
+            padding: [0, 0, 0, -28],
+            color: t.inkMuted,
+            fontFamily: t.font,
+            fontSize: 11
+          },
           axisLine: { show: false },
           axisTick: { show: false },
           axisLabel: {
@@ -970,9 +1015,9 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
         }),
         grid: {
           top: 14,
-          bottom: 16,
+          bottom: 44,
           left: 12,
-          right: 84,
+          right: 100,
           containLabel: true
         },
         yAxis: {
@@ -991,8 +1036,16 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
         },
         xAxis: {
           type: 'value',
-          max: 48,
+          max: 50,
+          interval: 10,
           name: et.eje_x || '',
+          nameLocation: 'middle',
+          nameGap: 28,
+          nameTextStyle: {
+            color: t.inkMuted,
+            fontFamily: t.font,
+            fontSize: 11
+          },
           axisLine: { show: false },
           axisTick: { show: false },
           axisLabel: {

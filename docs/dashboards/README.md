@@ -7,18 +7,20 @@ datos adentro. Abre con doble clic, sin servidor y sin internet. Es el mismo
 archivo que recibe un cliente — por eso el portfolio lo muestra tal cual, en
 vez de una captura.
 
-| Archivo | Origen | Estado |
-|---|---|---|
-| `attrition.html` | `Antigravity/design/tickets/T-001` | **provisional, en castellano** |
+| Archivo | Origen | Idioma | Estado |
+|---|---|---|---|
+| `attrition.html` | `Antigravity` · T-001 → T-003 | en-US | listo para publicar |
 
-## attrition.html, qué falta antes de publicarlo
+## Cómo se regenera
 
-1. **Reemplazarlo por la versión en inglés.** El sitio está en inglés y el
-   tablero está en castellano. El JSON traducido ya existe; se construye con
-   `python3 frontend/build.py T-001-en` en el repo Antigravity.
-2. **Esperar el T-003.** La versión de hoy tiene cuatro títulos de eje
-   encimados o cortados. En el portfolio eso dice "lo armó un script y nadie
-   lo miró".
+En el repo `Antigravity`:
 
-No se publica hasta que esos dos estén. El archivo está acá para poder probar
-los enlaces del sitio, no para que lo vea nadie.
+```bash
+python3 design/traducir.py T-001 design/datos/T-001-en.json
+python3 frontend/build.py T-001-en
+cp output/portfolio-sample-ibm-hr-analytics/tablero-employee-attrition.html \
+   ../Data_Analytics_Projects/docs/dashboards/attrition.html
+```
+
+La versión en castellano del mismo tablero sale de `build.py T-001`, sin tocar
+una línea de código: el idioma y los textos viven en el JSON.
