@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Employee attrition &mdash; A tenth of the people, a third of the departures &mdash; Lautaro Pintos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="156 people — 10.6% of a 1,470-person workforce — produce 34.6% of all departures. An attrition analysis that survives controlling for seniority and tenure." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<a href="index.html" class="logo">Lautaro Pintos</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Projects</a></li>
+					<li class="active"><a href="hr.html">Employee attrition</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://github.com/LPintos14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						<span class="date">October 17, 2026</span>
+						<h1>A tenth of the people.<br />A third of the departures.</h1>
+						<p>Fourteen hundred and seventy employees, thirty-four variables &mdash; and one group of<br />156 people you can name, schedule and fix on Monday.</p>
+					</header>
+					<div class="image main"><img src="images/hr-attrition.png" alt="Attrition dashboard: overtime raises departure rates at every seniority level" /></div>
+
+					<ul class="actions special">
+						<li><a href="dashboards/attrition.html" class="button primary">Open the dashboard</a></li>
+					</ul>
+
+					<p><em>That button opens a single HTML file. No login, no plugin, no account &mdash; and it works with the wifi off. It is the same file a client receives.</em></p>
+
+					<h2>Executive summary</h2>
+
+					<p><strong>156 people &mdash; 10.6% of the workforce &mdash; account for 34.6% of every departure.</strong> They are the employees at the lowest job level who also work overtime, and they leave at 52.6% against 15.8% for their peers at the same level who do not.</p>
+
+					<p>That sentence is the whole deliverable. Everything below is the work that makes it safe to act on.</p>
+
+					<h2>Why overtime, and not the twelve other things that correlate</h2>
+
+					<p>An attrition dataset hands you thirty-four columns and most of them correlate with leaving. The job is not finding a correlation &mdash; it is finding the one that survives a control.</p>
+
+					<p>Overtime does. Employees working overtime leave at 30.5% against 10.4%, and <strong>the gap holds inside every one of the five job levels and inside every one of the five tenure bands.</strong> It is not seniority wearing a disguise, and it is not new hires churning.</p>
+
+					<table>
+					<thead><tr><th>Job level</th><th>No overtime</th><th>Overtime</th></tr></thead>
+					<tbody>
+					<tr><td><strong>Level 1</strong></td><td>15.8%</td><td><strong>52.6%</strong></td></tr>
+					<tr><td>Level 2</td><td>6.7%</td><td>17.8%</td></tr>
+					<tr><td>Level 3</td><td>12.3%</td><td>20.6%</td></tr>
+					<tr><td>Level 4</td><td>2.7%</td><td>9.1%</td></tr>
+					<tr><td>Level 5</td><td>3.9%</td><td>16.7%</td></tr>
+					</tbody>
+					</table>
+
+					<h2>What I threw away, and why that matters more</h2>
+
+					<p>Work&ndash;life balance looked like a strong driver: the worst-rated group leaves at 31.2%. Controlling for overtime, it contributes about four points. It is a <em>consequence</em>, not a cause &mdash; people rate their balance badly because they are working overtime.</p>
+
+					<p>Tenure, age, years in role and years with the current manager all ranked high. They are the same latent variable &mdash; seniority &mdash; counted four times. <strong>Monthly income and job level correlate at &rho;&nbsp;=&nbsp;0.92</strong>, which means a salary finding is mostly a hierarchy finding wearing a different label.</p>
+
+					<p>This is where most attrition reports go wrong. They hand over a ranked list of correlations, the client acts on the top one, and nothing moves &mdash; because the top one was a symptom.</p>
+
+					<h2>The salary question, answered honestly</h2>
+
+					<p>Inside level 1, pay does retain: the bottom salary quintile leaves at 34.9% and the top at 18.5%. Across the company as a whole, comparing people at the same level, the effect collapses to roughly six points.</p>
+
+					<p><strong>So: raise the floor at level 1, not the whole scale.</strong> That is a materially cheaper recommendation than the one a correlation ranking would have produced.</p>
+
+					<h2>What to do on Monday</h2>
+
+					<ol>
+						<li><strong>Redistribute load for the 156 level-1 employees working overtime.</strong> Best ratio between size of problem and cost of fixing it.</li>
+						<li><strong>Review the level-1 salary floor</strong> &mdash; not the full scale.</li>
+						<li><strong>Re-measure at 90 days on that same group.</strong></li>
+					</ol>
+
+					<h2>What this does not say</h2>
+
+					<ul>
+						<li><strong>The dataset is synthetic.</strong> IBM published it for teaching. The method is real and transferable; the figures describe no existing company.</li>
+						<li><strong>It is a photograph, not a film.</strong> There are no hire or exit dates, so nothing here says whether attrition is getting better or worse.</li>
+					</ul>
+
+					<h2>How it was built</h2>
+
+					<p>SQL for the quality audit and the aggregations, Python for the confounding analysis (Spearman &rho; and Cram&eacute;r's V to catch latent variables), and a hand-built front end &mdash; a single self-contained HTML file with no external dependencies.</p>
+
+					<p>The colour palette is validated with a script rather than chosen by eye: every adjacent pair clears a &Delta;E of 8 in OKLab under the three common forms of colour blindness. <strong>About 8% of men cannot distinguish the red/green pairs most dashboards ship with.</strong> This one does not have that problem, and it is checked on every build rather than hoped for.</p>
+
+					<ul class="actions special">
+						<li><a href="dashboards/attrition.html" class="button primary">Open the dashboard</a></li>
+						<li><a href="index.html" class="button">All projects</a></li>
+					</ul>
+
+				</section>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact">
+					<section>
+						<h3>GitHub</h3>
+						<ul class="icons alt">
+							<li><a href="https://github.com/LPintos14" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
