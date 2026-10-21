@@ -5,6 +5,11 @@ Source of my published portfolio → **https://lpintos14.github.io/Data_Analytic
 Five analysis projects taken from raw dataset to published Tableau dashboard, with the SQL and
 Python behind each one kept in the repo.
 
+**Want this done on your own data?** I take commissions on Fiverr:
+[an interactive dashboard that opens without any software](https://www.fiverr.com/lautaro_p/build-an-interactive-dashboard-that-opens-without-any-software) ·
+[a recurring report automated in Python](https://www.fiverr.com/lautaro_p/automate-your-recurring-excel-or-google-sheets-report-with-python) ·
+[a Tableau dashboard](https://www.fiverr.com/lautaro_p/build-an-interactive-tableau-dashboard-from-your-business-data).
+
 > **If you only look at one thing, don't look here.** My most complete work is
 > [**olist-ecommerce-analysis**](https://github.com/LPintos14/olist-ecommerce-analysis) — a
 > reproducible pipeline over 9 related tables and 1.5M rows, with a documented data-quality
